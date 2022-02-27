@@ -17,9 +17,6 @@
   "engines": {
     "node": "16.x"
   },
-  "prisma":{
-    "seed": "node prisma/seed.js"
-  },
   "devDependencies": {
     "prisma": "^3.10.0"
   }
