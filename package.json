@@ -3,7 +3,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "node index.js",
-    "build": "npm install && npx prisma db push && npx prisma generate"
+    "build": "npm install && npx prisma db pull && npx prisma generate"
   },
   "version": "1.0.0",
   "repository": "https://github.com/xamk-tk/soveltava-harjoitustyo-cpeny003-xamk-1.git",
@@ -16,6 +16,9 @@
   },
   "engines": {
     "node": "16.x"
+  },
+  "prisma":{
+    "seed": "node prisma/seed.js"
   },
   "devDependencies": {
     "prisma": "^3.10.0"
