@@ -1,0 +1,23 @@
+{
+  "name": "so2-oppimistehtava",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm install && npx prisma db pull && npx prisma generate"
+  },
+  "version": "1.0.0",
+  "repository": "https://github.com/xamk-tk/soveltava-harjoitustyo-cpeny003-xamk-1.git",
+  "author": "Petri <cpeny003@edu.xamk.fi>",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^3.10.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "devDependencies": {
+    "prisma": "^3.10.0"
+  }
+}

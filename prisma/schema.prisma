@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model miehetetunimi {
+  id        Int     @id @default(autoincrement())
+  Nimi      String? @db.VarChar(15)
+  Lukumaara Int?
+}
+
+model miehetkaikki {
+  id        Int     @id @default(autoincrement())
+  Nimi      String? @db.VarChar(16)
+  Lukumaara Int?
+}
+
+model miehetmuutnimet {
+  id        Int     @id @default(autoincrement())
+  Nimi      String? @db.VarChar(16)
+  Lukumaara Int?
+}
+
+model naisetetunimi {
+  id        Int     @id @default(autoincrement())
+  Nimi      String? @db.VarChar(15)
+  Lukumaara Int?
+}
+
+model naisetkaikki {
+  id        Int     @id @default(autoincrement())
+  Nimi      String? @db.VarChar(16)
+  Lukumaara Int?
+}
+
+model naisetmuutnimet {
+  id        Int     @id @default(autoincrement())
+  Nimi      String? @db.VarChar(16)
+  Lukumaara Int?
+}
+
+model sukunimet {
+  id        Int     @id @default(autoincrement())
+  Sukunimi  String? @db.VarChar(25)
+  Lukumaara Int?
+}
